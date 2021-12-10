@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj2.command.button.POVButton;
 import team.gif.lib.AxisButton;
 import team.gif.robot.commands.ExampleCommand;
+import team.gif.robot.commands.RunCIM;
 import team.gif.robot.commands.RunNeoShooterVoltage;
 
 
@@ -69,6 +70,7 @@ public class OI {
          *
          */
         dY.whileHeld(new RunNeoShooterVoltage()); // T.SBab Req 6
+        dB.whileHeld(new RunCIM(true)); // T.SBab Req 3
     }
 
 }
